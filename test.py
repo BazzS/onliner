@@ -33,8 +33,8 @@ class PlayGround(unittest.TestCase):
         with allure.step('Search test phone by name'):
             page.search_area(phone_name)
         with allure.step('Switch to iframe'):
-            page.switch_iframe()
-        with with allure.step('Search test phone price'):
+            page.switch_to_iframe()
+        with allure.step('Search test phone price'):
             iframe_price = page.price_iframe()
         self.assertEqual(price, iframe_price)
 
