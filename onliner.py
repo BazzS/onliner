@@ -40,7 +40,7 @@ class SearchOnliner(Base):
     def find_price(self):
         return self.find_element(LOCATORS.PRICE, time=2).text
 
-    def search_area(self, search_text)
+    def search_area(self, search_text):
         return self.find_element(LOCATORS.INPUT, time=2).send_keys(f'{search_text}')
 
     def switch_iframe(self):
